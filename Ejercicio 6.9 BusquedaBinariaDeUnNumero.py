@@ -4,6 +4,17 @@ class BusquedaBinaria:
 
     def Busqueda(self, lista, clave, izquierda, derecha):
 
+        """
+        Metodo que permite realizar una busqueda binaria de un numero
+        Devuelve p si clave está en la lista
+        Devuelve -1 si clave no está en lista
+        """
+
+        """
+        izquierda guarda el inicio de la lista
+        derecha guarda el fin de la lista
+        """
+
         while izquierda <= derecha:
             # el punto medio del segmento
             medio = math.floor((izquierda + derecha) / 2)
