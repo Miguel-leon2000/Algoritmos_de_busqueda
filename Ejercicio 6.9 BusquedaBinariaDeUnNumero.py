@@ -23,3 +23,11 @@ class BusquedaBinaria:
 
             # salió del ciclo de manera no exitosa: el valor no fue encontrado
         return -1
+
+def main():
+    A = [8, 13, 17, 26, 44, 56, 88, 97]
+    b = BusquedaBinaria()
+    print(b.Busqueda(A, 20, 0, len(A) - 1))
+
+if __name__ == "__main__":
+    main()
