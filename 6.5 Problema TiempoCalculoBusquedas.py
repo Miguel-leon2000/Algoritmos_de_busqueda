@@ -6,18 +6,14 @@ class BusquedaBinaria:
     def BusquedaBinaria(self, lista, clave, izquierda, derecha):
         inicio_de_tiempo = time.perf_counter()
 
-        """Búsqueda binaria
-            Precondición: lista está ordenada
-            Devuelve -1 si clave no está en lista;
-            Devuelve p tal que lista[p] == clave, si clave está en lista
-            """
+        """
+        El procedimiento consiste en buscar en toda la lista dividiéndola en segmentos y considerando
+        a la lista completa como el segmento que empieza en 0 y termina
+        en len(lista) - 1.
+        """
 
-        # Busca en toda la lista dividiéndola en segmentos y considerando
-        # a la lista completa como el segmento que empieza en 0 y termina
-        # en len(lista) - 1.
-
-        # izquierda guarda el índice inicio del segmento
-        # derecha guarda el índice fin del segmento
+        # izquierda guarda el índice inicio
+        # derecha guarda el índice fin
 
         while izquierda <= derecha:
             # el punto medio del segmento
@@ -81,7 +77,7 @@ class BusquedaSecuencial:
 
         return encontrado
 
-class QuickSort:
+class QuickSort:  #Asignacion de un algoritmo de ordenamiento
     def intercambia(self, A, x, y):
         tmp = A[x]
         A[x] = A[y]
