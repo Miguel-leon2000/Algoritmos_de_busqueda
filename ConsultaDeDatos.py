@@ -1,4 +1,11 @@
 class BusquedaSecuencial:
+
+
+    """
+    Metodo que realiza una busqueda secuencial, para
+    encontrar un telefono cualquiera, ya que si existe devuelve un True
+    y si no existe un False.
+    """
     def busqueda(self, lista, clave):
 
         encontrado = False
